@@ -3,5 +3,16 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-white text-dire-wolf antialiased;
+  }
+
+  a,
+  button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dodgeroll-gold focus-visible:ring-offset-2;
+  }
 }
