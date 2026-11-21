@@ -1,5 +1,5 @@
 <template>
-  <header class="border-b border-gray-100 bg-white">
+  <header class="border-b border-coral bg-cream">
     <nav
       class="container flex min-h-20 items-center"
       aria-label="Main navigation"
@@ -22,11 +22,24 @@
         <li>
           <BaseBtn :to="{ name: 'about' }" variant="nav">About</BaseBtn>
         </li>
+        <li>
+          <BaseBtn :to="{ name: 'saved-recipes' }" variant="nav">Saved</BaseBtn>
+        </li>
       </ul>
     </nav>
+    <p
+      v-if="storageError"
+      class="border-t border-coral/30 bg-coral/10 px-4 py-2 text-center text-sm text-soft-teal"
+      role="status"
+    >
+      {{ storageError }}
+    </p>
   </header>
 </template>
 
 <script setup>
 import BaseBtn from "~/components/UI/BaseBtn.vue";
+import { useSavedRecipes } from "~/composables/useSavedRecipes";
+
+const { storageError } = useSavedRecipes();
 </script>

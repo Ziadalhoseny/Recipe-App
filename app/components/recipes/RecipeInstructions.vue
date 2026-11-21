@@ -1,6 +1,6 @@
 <template>
   <section class="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-    <h2 class="mb-5 text-2xl font-bold text-dire-wolf sm:text-3xl">
+    <h2 class="mb-5 text-2xl font-bold text-teal sm:text-3xl">
       Instructions
     </h2>
     <ol class="flex flex-col gap-5 text-base sm:text-lg">
@@ -10,7 +10,7 @@
         class="flex items-start gap-4"
       >
         <span
-          class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-dodgeroll-gold text-sm font-bold text-white"
+          class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-cream"
         >
           {{ index + 1 }}
         </span>

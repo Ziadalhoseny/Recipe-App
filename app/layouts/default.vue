@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col bg-white text-dire-wolf">
+  <div class="flex min-h-screen flex-col bg-cream text-teal">
     <TheHeader />
     <slot />
   </div>

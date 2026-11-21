@@ -3,9 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dodgeroll-gold': '#f79f1a',
-        'apple-green': '#046e1b',
-        'dire-wolf': '#292727',
+        cream: 'rgb(var(--color-cream) / <alpha-value>)',
+        teal: 'rgb(var(--color-teal) / <alpha-value>)',
+        coral: 'rgb(var(--color-coral) / <alpha-value>)',
+        'soft-teal': 'rgb(var(--color-soft-teal) / <alpha-value>)',
       },
     },
     container: {

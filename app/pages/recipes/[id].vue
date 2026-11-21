@@ -2,14 +2,14 @@
   <main class="container max-w-screen-lg py-12 sm:py-16">
     <p
       v-if="pending"
-      class="rounded-xl bg-gray-50 p-8 text-center text-gray-600"
+      class="rounded-xl bg-cream p-8 text-center text-soft-teal"
       role="status"
     >
       Loading recipe…
     </p>
     <p
       v-else-if="error"
-      class="rounded-xl border border-red-200 bg-red-50 p-5 text-red-800"
+      class="rounded-xl border border-coral/30 bg-coral/10 p-5 text-soft-teal"
       role="alert"
     >
       We couldn’t load this recipe right now. Please try again later.
@@ -17,20 +17,20 @@
     <article v-else-if="recipe" class="overflow-hidden">
       <header class="mb-7">
         <p
-          class="mb-3 font-semibold uppercase tracking-[0.16em] text-apple-green"
+          class="mb-3 font-semibold uppercase tracking-[0.16em] text-soft-teal"
         >
           {{ recipe.cuisine }} recipe
         </p>
-        <h1 class="mb-5 text-4xl font-extrabold text-dire-wolf sm:text-5xl">
+        <h1 class="mb-5 text-4xl font-extrabold text-teal sm:text-5xl">
           {{ recipe.name }}
         </h1>
         <div
-          class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-600 sm:text-base"
+          class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-teal/75 sm:text-base"
         >
           <div class="flex items-center gap-2">
             <Icon
               name="mdi:clock-time-eight-outline"
-              class="text-dodgeroll-gold"
+              class="text-coral"
               aria-hidden="true"
             />
             <span
@@ -41,7 +41,7 @@
           <div class="flex items-center gap-2">
             <Icon
               name="mdi:fire"
-              class="text-dodgeroll-gold"
+              class="text-coral"
               aria-hidden="true"
             />
             <span
@@ -52,7 +52,7 @@
           <div class="flex items-center gap-2">
             <Icon
               name="mdi:star"
-              class="text-dodgeroll-gold"
+              class="text-coral"
               aria-hidden="true"
             />
             <span
@@ -76,7 +76,7 @@
     </article>
     <p
       v-else-if="!recipe"
-      class="rounded-xl bg-gray-50 p-8 text-center text-gray-600"
+      class="rounded-xl bg-cream p-8 text-center text-soft-teal"
       role="status"
     >
       This recipe could not be found.
