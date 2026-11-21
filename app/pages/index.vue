@@ -34,10 +34,10 @@
         <div class="order-1 flex-1 lg:order-2">
           <NuxtImg
             densities="x1"
-            sizes="xs:100vw sm:736px"
+            sizes="xs:100vw sm:667px"
             format="webp"
-            src="/w.png"
-            alt="A colorful breakfast plate with avocado, egg, greens, and toast"
+            src="/W.png"
+            alt=""
             class="mx-auto w-full max-w-xl drop-shadow-xl lg:translate-y-14"
           />
         </div>
