@@ -4,6 +4,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon/module', '@nuxt/image'],
   css: ['@/assets/style.css'],
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in',
+    },
+  },
 
   tailwindcss: {
     config: './tailwind.config.cjs',

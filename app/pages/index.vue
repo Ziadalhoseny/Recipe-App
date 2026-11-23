@@ -36,7 +36,7 @@
             densities="x1"
             sizes="xs:100vw sm:667px"
             format="webp"
-            src="/W.png"
+            src="/hero.png"
             alt=""
             class="mx-auto w-full max-w-xl drop-shadow-xl lg:translate-y-14"
           />

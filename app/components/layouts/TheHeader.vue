@@ -1,21 +1,27 @@
 <template>
   <header class="border-b border-coral bg-cream">
     <nav
-      class="container flex min-h-20 items-center"
+      class="container flex flex-col items-center justify-center gap-3 py-3 sm:min-h-20 sm:flex-row sm:justify-between sm:gap-0 sm:py-0"
       aria-label="Main navigation"
     >
-      <BaseBtn :to="{ name: 'index' }" variant="brand">
+      <BaseBtn
+        :to="{ name: 'index' }"
+        variant="brand"
+        class="flex items-center justify-center gap-2"
+      >
         <NuxtImg
           width="48"
           format="webp"
           densities="x1"
-          src="/icon-green.png"
+          src="/W.png"
           alt=""
           class="h-10 w-10"
         />
         <span class="text-2xl font-bold">RecipeGo</span>
       </BaseBtn>
-      <ul class="ml-auto flex items-center gap-2 sm:gap-4">
+      <ul
+        class="flex flex-wrap items-center justify-center gap-2 sm:ml-auto sm:flex-nowrap sm:gap-4"
+      >
         <li>
           <BaseBtn to="/" variant="nav">Home</BaseBtn>
         </li>
